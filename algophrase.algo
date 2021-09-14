@@ -1,0 +1,24 @@
+ALGOTITHM  phrase
+VAR 
+Ph : String[];
+nbrCharacters,nbrmot,nbrVowels : integer;
+nbrCharacters:=0;
+nbrWord:=0;
+nbVowels:=0;
+BEGIN
+repeat
+read(Ph);
+until(Ph[Ph.length-1]=".")
+for(integer i=0;i<Ph.length;i++){
+  nbrCharacters++;
+  if((Ph[i]=" ")or(Ph[i]=="."))then{
+      nbrmot++;
+  }
+  if((Ph[i]="a")or(Ph[i]="i")or(Ph[i]="o")or(Ph[i]="u")or(Ph[i]="y")or(Ph[i]="e")(Ph[i]="A")or(Ph[i]="I")or(Ph[i]="O")or(Ph[i]="U")or(Ph[i]="Y")or(Ph[i]="E")){
+     nbVowels++; 
+  }
+}
+     Write(nbrCharacters); 
+    Write(nbrWord); 
+    Write(nbVowels);
+END phrase.
